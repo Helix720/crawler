@@ -191,7 +191,7 @@ def crawl(URL, agent, https):
 	print MED + "Found "+num+" true URLs."
 	w.write("\n\nFound "+num+" true URLs.\n\n")
 
-	print INFO + "Report saved in this directory as 'report.txt'."
+	print INFO + "Report saved at '"+OUTPUT+"'"
 	print PASS + "Scan finished at "+time.strftime("%H:%M:%S")
 
 # def htmlcopy(URL):
