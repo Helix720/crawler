@@ -37,6 +37,15 @@ PASS = G + "[+] " + O
 INFO = B + "[!] " + O
 MED = Y + "[~] " + O
 
+def headers():
+    print BOLD + '''     _       
+  ___ _ __ __ ___      _| |_   _ 
+ / __| '__/ _` \ \ /\ / / | | | |
+| (__| | | (_| |\ V  V /| | |_| |
+ \___|_|  \__,_| \_/\_/ |_|\__, |
+                           |___/ 
+''' 
+
 def help():
 	print '''\033[1;94mSimple web crawler in python written by OnixIs.\033[0m
 \033[1mOptions:\033[0m
@@ -291,7 +300,7 @@ if __name__ == '__main__':
 		sys.exit()
 	else:
 		try:
+                        headers()
 			main()
 		except KeyboardInterrupt:
 			sys.exit(ERROR + "KeyboardInterrupt")
-
